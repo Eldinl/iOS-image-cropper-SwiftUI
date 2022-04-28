@@ -13,8 +13,22 @@ enum ImageType {
 }
 
 struct ContentView: View {
+    @State private var finalImage: UIImage?
+    @State private var inputImage: UIImage?
     var body: some View {
-        Text("Hello, world!")
+        NavigationView {
+            VStack {
+                NavigationLink(destination: AvatarView()) {
+                    Text("For avatar")
+                        .font(.title)
+                }
+                .padding(.bottom, 50)
+                NavigationLink(destination: BackgroundImageView()) {
+                    Text("For background image")
+                        .font(.title)
+                }
+            }.navigationTitle("Image cropper")
+        }
     }
 }
 

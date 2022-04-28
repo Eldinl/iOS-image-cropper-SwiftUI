@@ -14,6 +14,8 @@
 		B351FF99281AE9F100405F31 /* BackgroundImageMoveAndScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = B351FF98281AE9F100405F31 /* BackgroundImageMoveAndScale.swift */; };
 		B351FF9B281AEA8C00405F31 /* AvatarImageMoveAndScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = B351FF9A281AEA8C00405F31 /* AvatarImageMoveAndScale.swift */; };
 		B351FF9D281AEB4200405F31 /* ImageCropper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B351FF9C281AEB4200405F31 /* ImageCropper.swift */; };
+		B351FF9F281AEFC800405F31 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B351FF9E281AEFC800405F31 /* AvatarView.swift */; };
+		B351FFA1281AEFD800405F31 /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B351FFA0281AEFD800405F31 /* BackgroundImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		B351FF98281AE9F100405F31 /* BackgroundImageMoveAndScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageMoveAndScale.swift; sourceTree = "<group>"; };
 		B351FF9A281AEA8C00405F31 /* AvatarImageMoveAndScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarImageMoveAndScale.swift; sourceTree = "<group>"; };
 		B351FF9C281AEB4200405F31 /* ImageCropper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCropper.swift; sourceTree = "<group>"; };
+		B351FF9E281AEFC800405F31 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		B351FFA0281AEFD800405F31 /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 		B351FF78281AE5DB00405F31 = {
 			isa = PBXGroup;
 			children = (
+				B351FFA2281AF3D500405F31 /* Preview Content */,
 				B351FF83281AE5DB00405F31 /* iOSImageCropperSwiftUI */,
 				B351FF82281AE5DB00405F31 /* Products */,
 			);
@@ -60,6 +65,8 @@
 				B351FF84281AE5DB00405F31 /* iOSImageCropperSwiftUIApp.swift */,
 				B351FF86281AE5DB00405F31 /* ContentView.swift */,
 				B351FF9C281AEB4200405F31 /* ImageCropper.swift */,
+				B351FF9E281AEFC800405F31 /* AvatarView.swift */,
+				B351FFA0281AEFD800405F31 /* BackgroundImageView.swift */,
 				B351FF97281AE9B200405F31 /* MoveAndScaleViews */,
 				B351FF94281AE76400405F31 /* ImagePickersViews */,
 			);
@@ -82,6 +89,14 @@
 				B351FF9A281AEA8C00405F31 /* AvatarImageMoveAndScale.swift */,
 			);
 			path = MoveAndScaleViews;
+			sourceTree = "<group>";
+		};
+		B351FFA2281AF3D500405F31 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Preview Content";
+			path = "iOSImageCropperSwiftUI/Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,8 +170,10 @@
 				B351FF99281AE9F100405F31 /* BackgroundImageMoveAndScale.swift in Sources */,
 				B351FF87281AE5DB00405F31 /* ContentView.swift in Sources */,
 				B351FF96281AE7C300405F31 /* ImagePicker.swift in Sources */,
+				B351FFA1281AEFD800405F31 /* BackgroundImageView.swift in Sources */,
 				B351FF93281AE6E400405F31 /* CameraPicker.swift in Sources */,
 				B351FF9B281AEA8C00405F31 /* AvatarImageMoveAndScale.swift in Sources */,
+				B351FF9F281AEFC800405F31 /* AvatarView.swift in Sources */,
 				B351FF9D281AEB4200405F31 /* ImageCropper.swift in Sources */,
 				B351FF85281AE5DB00405F31 /* iOSImageCropperSwiftUIApp.swift in Sources */,
 			);

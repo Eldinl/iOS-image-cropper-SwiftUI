@@ -78,9 +78,8 @@ struct AvatarImageMoveAndScale: View {
                 HStack{
                     Button(
                         action: {
-                            //                            isShowingImagePicker = true
-                            //                            self.save()
-                            //                                presentationMode.wrappedValue.dismiss()
+                            self.save()
+                            presentationMode()
                         })
                     {
                         Text("Save photo")
@@ -271,9 +270,9 @@ struct AvatarImageMoveAndScale: View {
     }
     
     private func save() {
-
+        
         let scale = (inputImage?.size.width)! / profileW
-
+        
         let xPos = ( ( ( profileW - UIScreen.main.bounds.width ) / 2 ) + inset + ( currentPosition.width * -1 ) ) * scale
         let yPos = ( ( ( profileH - UIScreen.main.bounds.width ) / 2 ) + inset + ( currentPosition.height * -1 ) ) * scale
         let radius = ( UIScreen.main.bounds.width - inset * 2 ) * scale
@@ -285,7 +284,7 @@ struct AvatarImageMoveAndScale: View {
         print("Profile: w \(profileW) h \(profileH)")
         print("X Origin: \( ( ( profileW - UIScreen.main.bounds.width - inset ) / 2 ) + ( currentPosition.width  * -1 ) )")
         print("Y Origin: \( ( ( profileH - UIScreen.main.bounds.width - inset) / 2 ) + ( currentPosition.height  * -1 ) )")
-
+        
         print("Scale: \(scale)")
         print("Profile:\(profileW) + \(profileH)" )
         print("Curent Pos: \(currentPosition.debugDescription)")
